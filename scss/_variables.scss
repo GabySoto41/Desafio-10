@@ -1,0 +1,37 @@
+
+$colorFondo: black;
+
+$colorLetra: whitesmoke;
+
+$letra: "Oswald";
+
+$borde: 2px solid whitesmoke;
+
+
+$botones: (
+
+    btn1: #ffe259,
+    btn2: #ffa751,
+    btn3: #f7797d,
+    btn4: #f12711,
+);
+
+@each $btn, $color in $botones {
+
+    .#{$btn} {
+        background-color: $color;
+    }
+}
+
+@mixin sizes ($ancho,$alto) {
+
+    width: $ancho;
+    height: $alto;
+}
+
+
+
+
+
+
+
